@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--加载转圈-->
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/global_progress_loading"
+        android:visibility="gone" />
+    <!--内容显示-->
+    <RelativeLayout
+        android:id="@+id/rlayout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_height"
+            app:tabBackground="@drawable/tablayout_background"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/tablayou_text"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="@color/tablayou_text" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout_info"
+            android:background="#F1F1F1" />
+    </RelativeLayout>
+    <!--加载失败的图片信息-->
+    <TextView
+        android:id="@+id/tv_loading_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dp"
+        android:drawableTop="@mipmap/loading_failed"
+        android:text="@string/loding_failed"
+        android:visibility="gone" />
+</RelativeLayout>

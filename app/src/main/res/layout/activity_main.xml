@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.game.lol.zhangyoubao.activity.MainActivity">
+    <!--ToolBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/title_bg">
+
+        <ImageButton
+            android:id="@+id/ibtn_person_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toolbar_btn_person_center" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新闻资讯"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18_sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:id="@+id/ibtn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_btn_search" />
+
+            <ImageButton
+                android:id="@+id/ibtn_video_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_btn_video_download"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--Fragment-->
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <!--TabLayout-->
+    <RadioGroup
+        android:id="@+id/rg_home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff2f323a"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_information"
+            style="@style/TabRadioButtonStyle"
+            android:background="@drawable/home_information_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_video"
+            style="@style/TabRadioButtonStyle"
+            android:background="@drawable/home_video_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_hero"
+            style="@style/TabRadioButtonStyle"
+            android:background="@drawable/home_hero_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            style="@style/TabRadioButtonStyle"
+            android:background="@drawable/home_community_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            style="@style/TabRadioButtonStyle"
+            android:background="@drawable/home_more_selector" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/video_bg">
+    <!--选择周免和折扣-->
+    <LinearLayout
+        android:id="@+id/btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_free_discount_selector"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_free"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="周免"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="折扣"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <!--切换内容-->
+    <FrameLayout
+        android:id="@+id/free_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_background" />
+
+</RelativeLayout>

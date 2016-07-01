@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ZhangYouBao</string>
+    <string name="toolbar_information">新闻资讯</string>
+    <string name="toolbar_video">游戏视频</string>
+    <string name="toolbar_hero">英雄列表</string>
+    <string name="toolbar_community">社区</string>
+    <string name="toolbar_more">更多</string>
+    <string name="loding_failed">加载失败，请点击屏幕重新加载</string>
+    <string name="commentDetail">评论详情</string>
+    <string name="commenList">评论列表</string>
+    <string name="commentSend">发送</string>
+    <string name="tipNoComment">还没有人评论呢，快来抢沙发！</string>
+    <string name="unlogin">亲，您还没登录哦~</string>
+    <string name="login">登录</string>
+    <string name="str_password">密码</string>
+    <string name="str_username">手机号/用户名/邮箱</string>
+    <string name="str_login">登录</string>
+    <string name="search">搜索</string>
+    <array name="titles">
+        <item>战绩查询</item>
+        <item>赛事</item>
+        <item>英雄榜</item>
+        <item>大神榜</item>
+        <item>精彩专栏</item>
+        <item>S6天赋模拟</item>
+        <item>符文模拟</item>
+        <item>召唤师技能</item>
+        <item>装备查询</item>
+        <item>铃声</item>
+        <item>壁纸</item>
+        <item>小说</item>
+        <item>兑换大厅</item>
+        <item>娱乐</item>
+    </array>
+
+    <array name="imageId">
+        <item>R.mipmap.more_fight_record_icon</item>
+        <item>R.mipmap.match_schedule_icon</item>
+        <item>R.mipmap.more_hero_icon</item>
+        <item>R.mipmap.more_player_icon</item>
+        <item>R.mipmap.more_topic_icon</item>
+        <item>R.mipmap.more_talent_icon</item>
+        <item>R.mipmap.more_rune_icon</item>
+        <item>R.mipmap.more_skills_icon</item>
+        <item>R.mipmap.more_equipment_icon</item>
+        <item>R.mipmap.more_ring_icon</item>
+        <item>R.mipmap.store_img</item>
+        <item>R.mipmap.more_novel_icon</item>
+        <item>R.mipmap.store_img</item>
+        <item>R.mipmap.mini_game_icon</item>
+    </array>
+
+</resources>

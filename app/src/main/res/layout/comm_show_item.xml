@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_avatar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/invite_fri"
+            android:layout_above="@+id/iv_content_pic"
+            android:layout_alignParentLeft="true" />
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/tv3_time"
+            android:id="@+id/type_ry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_avatar_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大标题"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <RelativeLayout
+                android:layout_toRightOf="@+id/tv1_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/radio_enabled_on_boy"
+                    />
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/radio_enabled_on_girl"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_below="@+id/tv1_nickname"
+                android:id="@+id/tv2_summoner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="小标题"
+                android:textColor="#646060"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv3_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="更新时间"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_below="@+id/type_ry"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/global_bg_square_circular"
+            android:id="@+id/iv_content_pic"
+            android:layout_above="@+id/tv4_desc"
+            android:longClickable="false" />
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_above="@+id/ly_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="照片描述"
+            android:id="@+id/tv4_desc" />
+        <RelativeLayout
+            android:id="@+id/ly_com"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whitesmoke"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_toLeftOf="@+id/iv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tool_good_d"
+                />
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_alignParentEnd="true"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tool_comment_d"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\WorkSpace\\Android_Studio_WorkSpace\\ZhangYouBao\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\WorkSpace\\Android_Studio_WorkSpace\\ZhangYouBao\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\Android_Studio_WorkSpace\\ZhangYouBao\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\WorkSpace\\Android_Studio_WorkSpace\\ZhangYouBao\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

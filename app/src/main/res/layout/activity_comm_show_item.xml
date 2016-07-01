@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.lol.zhangyoubao.activity.CommShowItemActivity">
+    <!--<include
+        layout="@layout/comm_show_item"/>
+-->
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/rl_nocomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_comment_nonet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guess_reward_list_empty" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_comment_nonet"
+            android:text="@string/tipNoComment" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/show_comment_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/bg_titlebar">
+
+        <ImageButton
+            android:id="@+id/btn_back_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/banner_back_normal" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/commentDetail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18_sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commentlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="8dp"
+        android:text="@string/commenList"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lv_comm_item_comment"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/lv_comm_item_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_commentlist" />
+
+    <RelativeLayout
+        android:id="@+id/rl_comment_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whitesmoke">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_add_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comment_add_d" />
+
+        <EditText
+
+            android:id="@+id/et_input_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入评论                       "
+            android:layout_alignBottom="@+id/btn_input_comment"
+            android:layout_toRightOf="@+id/iv_add_emoji"
+            android:layout_toEndOf="@+id/iv_add_emoji"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+
+        <Button
+            android:id="@+id/btn_input_comment"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/commentSend" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="6dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image_pic"
+            android:layout_width="@dimen/news_image_width"
+            android:layout_height="@dimen/news_image_height"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@mipmap/global_list_item_circular_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp">
+
+            <TextView
+                android:id="@+id/tv_image_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="国服6月24日免费英雄更换公告"
+                android:textColor="@color/list_title"
+                android:textSize="@dimen/text_16_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_image_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_image_title"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="这波周免可以，很联盟"
+                android:textColor="@color/list_desc"
+                android:textSize="@dimen/text_12_sp" />
+
+            <TextView
+                android:id="@+id/tv_image_published"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_image_desc"
+                android:layout_marginTop="4dp"
+                android:text="06-27  18:30"
+                android:textColor="@color/list_desc"
+                android:textSize="@dimen/text_12_sp" />
+            <ImageView
+                android:id="@+id/iv_image_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="8dp"
+                android:layout_above="@id/tv_image_desc"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/news_list_item_recommand_tag" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line" />
+</LinearLayout>

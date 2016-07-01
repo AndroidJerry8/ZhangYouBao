@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--主页面Tab标签的RadioButton-->
+    <style name="TabRadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!--更多Fragment里的每一个ImageView的样式-->
+    <style name="MoreFragmentImageViewStyle">
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <!--TabLayout里的字体大小和颜色-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_16_sp</item>
+    </style>
+    <!--资讯界面AD广告里RadioButton的样式-->
+    <style name="Info_AD_RadioButton">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:button">@drawable/ad_dot_selector</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--社区页面点击出现pupwindows的radiobutton-->
+    <style name="communityRadioButtonStyle">
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/filter_popup_selector</item>
+    </style>
+    <!--&lt;!&ndash;所有英雄里面过滤按钮RadioButton样式&ndash;&gt;-->
+    <!--<style name="AllHeroRadioButtonStyle">-->
+        <!--<item name="android:layout_width">0dp</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:background">@drawable/filter_popup_selector</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+
+</resources>

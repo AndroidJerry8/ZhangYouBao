@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--真人秀-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_zhenrenxiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/title_rl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_comm_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/community_usershow_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_comm_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/iv_comm_title1"
+                        android:text="真人秀"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_sp" />
+
+                    <ImageView
+                        android:id="@+id/arrow1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/global_arrow_bg_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:layout_toLeftOf="@+id/arrow1"
+                        android:text="进入"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12_sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_comm_pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_rl1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/community_usershow_default" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--晒玩法-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_shaiwanfa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/title_rl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_comm_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/community_equipment_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_comm_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/iv_comm_title2"
+                        android:text="晒玩法"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_sp" />
+
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/global_arrow_bg_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:layout_toLeftOf="@+id/arrow2"
+                        android:text="进入"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12_sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_comm_pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_rl2"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/community_equipment_default" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--找战友-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_zhaozhanyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/title_rl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_comm_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/community_find_friend_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_comm_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/iv_comm_title3"
+                        android:text="找战友"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16_sp" />
+
+                    <ImageView
+                        android:id="@+id/arrow3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/global_arrow_bg_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:layout_toLeftOf="@+id/arrow3"
+                        android:text="进入"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12_sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_comm_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_rl3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/community_find_friend_default" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

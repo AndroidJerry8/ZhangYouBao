@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="6dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Faker赛后采访：连败先想的是为什么会输"
+            android:textColor="@color/list_title"
+            android:textSize="@dimen/text_16_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_title"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="本周比赛中以2-0战胜Longzhu后，SKT T1令人担忧的表现暂时得到了缓解。"
+            android:textColor="@color/list_desc"
+            android:textSize="@dimen/text_12_sp" />
+
+        <TextView
+            android:id="@+id/tv_text_published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_text_desc"
+            android:layout_marginTop="4dp"
+            android:text="06-27  18:30"
+            android:textColor="@color/list_desc"
+            android:textSize="@dimen/text_12_sp" />
+
+        <ImageView
+            android:id="@+id/iv_text_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_text_desc"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/news_list_item_recommand_tag"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_content"
+        android:background="@color/list_line" />
+</RelativeLayout>
